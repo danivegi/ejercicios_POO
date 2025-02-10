@@ -2,6 +2,7 @@ package vista;
 
 import modelo.Estudiante;
 import modelo.Persona;
+import modelo.Profesor;
 
 public class Main {
 
@@ -20,6 +21,11 @@ public class Main {
         Estudiante est1 = new Estudiante("Daniel", 25, "Ciencias Ambientales");
         System.out.println(est1);
         est1.estudiar();
+
+        //Mostrar Profesor
+        Profesor prof1 = new Profesor("Jesús", 40, "Programación");
+        prof1.trabajar();
+
     }
 
 }
