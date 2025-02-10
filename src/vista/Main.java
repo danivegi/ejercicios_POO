@@ -9,6 +9,7 @@ public class Main {
         // Métdodo Persona con nombre y edad
         Persona p1 = new Persona("Daniel", 25);
         System.out.println(p1);
+        
     }
 
 }
