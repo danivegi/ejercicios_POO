@@ -19,6 +19,7 @@ public class Main {
         //Mostrar método Estudiante
         Estudiante est1 = new Estudiante("Daniel", 25, "Ciencias Ambientales");
         System.out.println(est1);
+        est1.estudiar();
     }
 
 }

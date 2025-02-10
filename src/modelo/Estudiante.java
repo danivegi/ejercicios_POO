@@ -26,7 +26,9 @@ public class Estudiante extends Persona{
         return "Estudiante [carrera=" + carrera + ", getNombre()=" + getNombre() + ", getEdad()=" + getEdad() + "]";
     }
 
-    
+    public void estudiar() {
+        System.out.println(getNombre() + " esta estudiando " + carrera);
+    }
     
 
 }
