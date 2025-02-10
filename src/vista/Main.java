@@ -1,5 +1,6 @@
 package vista;
 
+import modelo.Estudiante;
 import modelo.Persona;
 
 public class Main {
@@ -14,6 +15,10 @@ public class Main {
         Persona p2 = new Persona("Daniel", 25);
         System.out.println(p2);
         System.out.println("¿Son iguales las dos personas introducidas? " + p1.equals(p2));
+
+        //Mostrar método Estudiante
+        Estudiante est1 = new Estudiante("Daniel", 25, "Ciencias Ambientales");
+        System.out.println(est1);
     }
 
 }
