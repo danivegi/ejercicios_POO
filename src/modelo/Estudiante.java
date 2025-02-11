@@ -29,6 +29,10 @@ public class Estudiante extends Persona{
     public void estudiar() {
         System.out.println(getNombre() + " esta estudiando " + carrera);
     }
+
+    public void mostrarInformacion() {
+        System.out.println("Nombre: " + getNombre() + ". Edad: " + getEdad() + ". Carrera: " + carrera);
+    }
     
 
 }

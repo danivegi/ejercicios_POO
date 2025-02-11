@@ -1,10 +1,11 @@
 package modelo;
 
-public class Persona {
+public class Persona implements Comparable {
 
     //Inicializamos variables
     private String nombre;
     private int edad;
+    private Direccion direccion;
 
     public Persona() { //Constructor vaciío
 
@@ -14,6 +15,13 @@ public class Persona {
     public Persona(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
+    }
+
+    //Constructor con Direccion
+    public Persona(String nombre, int edad, Direccion direccion) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.direccion = direccion;
     }
 
     //Métodos Gets and Sets
@@ -67,6 +75,24 @@ public class Persona {
         return true;
     }
 
+    //Método para mostrar Info
+    public void mostrarInformacion() {
+        System.out.println("Nombre: " + getNombre() + ". Edad: " + getEdad());
+    }
+    
+    //Método para mostrar Direccion
+    public void mostrarDireccion() {
+        System.out.println(this.direccion);
+    }
+
+    @Override
+    public int comparar(Object obj) {
+        if (!(obj instanceof Persona)) {
+            throw new IllegalArgumentException("El objeto no es una instancia de Persona");
+        }
+        Persona otraPersona = (Persona) obj;
+        return Integer.compare(this.edad, otraPersona.edad);
+    }
     
     
 
